@@ -1,0 +1,62 @@
+/*
+developer: Shehan Chanuka
+Email: shehanxdev@gmail.com
+github:
+version: 1.0
+*/
+:root {
+  --text-primary-color: black;
+}
+
+* {
+  font: 16px "Roboto Slab", serif;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: var(--text-primary-color);
+}
+
+hr {
+  border-top: 2px solid black;
+  margin: 0;
+}
+
+@media only screen and (min-width: 576px) {
+  .custom-css-navbar {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .custom-css-navbar img {
+    width: 50px;
+    height: 50px;
+  }
+  .custom-css-nav a {
+    font-size: 20px;
+  }
+}
+
+@media only screen and (max-width: 575px) {
+  .custom-css-navbar img {
+    width: 30px;
+    height: 30px;
+  }
+  .custom-css-nav {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .custom-css-nav a {
+    text-align: center;
+  }
+}
