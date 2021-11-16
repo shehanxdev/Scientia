@@ -37,30 +37,8 @@ hr {
 .custom-css-img {
   margin: 10px;
 }
-.custom-css-footer ul {
-  list-style: none;
-}
-.custom-css-footer a {
-  color: white;
-  text-align: center;
-}
-.custom-css-footer div[class="row"] {
-  padding: 30px 40px 0 40px;
-}
-.custom-css-footer-heading {
-  flex-direction: column;
-  margin-left: 10px;
-}
-
-.custom-css-footer-row {
-  justify-content: space-between;
-}
-.custom-css-icons {
-  padding: 18px 0 0 0px;
-  justify-content: space-evenly;
-}
-.custom-css-icons i {
-  margin: 5px;
+footer {
+  margin-top: 100px;
 }
 @media only screen and (min-width: 576px) {
   //navbar styles start
