@@ -1,0 +1,74 @@
+body {
+  height: 1000vh;
+}
+//header
+.custom-css-logo {
+  height: 60px;
+  width: 50px;
+}
+//sidebar
+.custom-css-sidebar {
+  overflow: auto;
+  width: calc(300px + 300 * ((100vw - 768px) / 1133));
+  border-right: 2px solid black;
+}
+
+input:focus {
+  outline: none;
+}
+
+.custom-css-search-form-group input[type="image"] {
+  height: 30px;
+}
+.custom-css-search-form-group input[type="text"] {
+  border: 0;
+  box-shadow: 0px 4px 7px 2px rgba(0, 0, 0, 0.295);
+  height: 38px;
+  width: 27vw;
+}
+
+//customize form part
+.custom-css-customize-form input[type="radio"] {
+  float: right;
+  margin-right: 5vw;
+}
+.custom-css-submit-button-wrapper input {
+  width: 70px;
+  height: 40px;
+  margin: auto;
+  display: block;
+  background-color: transparent;
+  border: 2px solid #57a8ff;
+  color: #57a8ff;
+  margin-top: 20px;
+  transition: 0.5s;
+}
+.custom-css-submit-button-wrapper input:hover {
+  border-color: black;
+  color: black;
+}
+@media only screen and (max-width: 768px) {
+  .custom-css-search-form-group input[type="text"] {
+    width: 80%;
+  }
+  .custom-css-sidebar {
+    width: 100%;
+    border: 0;
+    //height: 0;
+    //overflow: hidden;
+  }
+
+  .custom-css-sidebar form[name="searchForm"] {
+    margin-left: 0 !important;
+  }
+  #searchForm {
+    display: flex;
+    justify-content: center;
+  }
+  .custome-css-searchButtonWrapper {
+    display: flex !important;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-left: 5px;
+  }
+}
