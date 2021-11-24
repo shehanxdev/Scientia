@@ -1,9 +1,13 @@
 body {
-  height: 1000vh;
+  height: 200vh;
 }
 
 button:focus {
   outline: 0;
+}
+
+.custom-css-div-inner-header {
+  z-index: 1300;
 }
 
 .custom-css-logo {
@@ -51,6 +55,10 @@ input:focus {
   outline: none;
 }
 
+.custom-css-search-form {
+  margin-top: 4rem;
+}
+
 .custom-css-search-form-group input[type="image"] {
   height: 30px;
 }
@@ -86,13 +94,34 @@ input:focus {
   color: black;
 }
 
+.custom-css-post-preview-section {
+  width: calc(424px + 467 * ((100vw - 768px) / 1133));
+  font-size: calc(16px + 3 * ((100vw - 768px) / 1133));
+  overflow: auto;
+  margin-right: calc(0px + 186 * ((100vw - 768px) / 1133));
+  margin-top: calc(205px + 50 * ((100vw - 768px) / 1133));
+  position: relative;
+}
+
+.custom-css-post-preview-section img {
+  max-width: 100%;
+}
+
+.custom-css-post-preview-section span,
+.custom-css-post-preview-section p,
+.custom-css-post-preview-section a {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+}
+
 @media only screen and (max-width: 768px) {
   html {
     font-size: 13px;
   }
   .custom-css-hamburger-wrapper {
     display: initial;
-    z-index: 1000;
+    z-index: 1100;
   }
   .custom-css-search-form-group input[type="text"] {
     width: 80%;
@@ -108,6 +137,8 @@ input:focus {
     height: fit-content;
     -webkit-box-shadow: 0px 4px 7px 2px rgba(0, 0, 0, 0.295);
             box-shadow: 0px 4px 7px 2px rgba(0, 0, 0, 0.295);
+    height: 0;
+    transition: 0.5s;
   }
   .custom-css-sidebar form[name="searchForm"] {
     margin-left: 0 !important;
@@ -132,8 +163,17 @@ input:focus {
         justify-content: space-around;
     margin-left: 5px;
   }
+  .custom-css-post-preview-section {
+    width: 100%;
+    margin: auto;
+    margin-top: 150px;
+  }
+  .custom-css-post-preview-section article {
+    margin-top: 50px;
+  }
 }
 
 .custom-css-sidebar-on {
   opacity: 1;
+  height: 550px;
 }

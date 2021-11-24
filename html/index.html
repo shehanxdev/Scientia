@@ -24,8 +24,8 @@
   </head>
   <body>
     <!--header section starts-->
-    <header class="container-fluid sticky-top p-0">
-      <div class="shadow">
+    <header class="container-fluid sticky-top p-0" style="height: 0;">
+      <div class="shadow bg-white custom-css-div-inner-header">
         <nav class="navbar justify-content-center flex-column">
           <div class="navbar-header">
             <img
@@ -49,17 +49,20 @@
           </div>
         </nav>
       </div>
-      <button class="position-fixed border-0 bg-transparent mt-3 ml-3 custom-css-hamburger-wrapper" type="menu" >
-        <img class="custom-css-hamburger"  src="../images/menu.png" alt="">
-      </button>
-      <button class="position-fixed border-0 bg-transparent mt-3 ml-3 custom-css-close-wrapper">
-        <img class="custom-css-close" src="../images/close.png" alt="">
-      </button>
-      <div class="custom-css-sidebar">
+      <div class="bg-white">
+        <button class="position-fixed border-0 bg-transparent mt-3 ml-3 custom-css-hamburger-wrapper" type="menu" >
+          <img class="custom-css-hamburger bg-white rounded-circle position-fixed"  src="../images/menu.png" alt="">
+        </button>
+        <button class="position-fixed border-0 bg-transparent mt-3 ml-3 custom-css-close-wrapper">
+          <img class="custom-css-close" src="../images/close.png" alt="">
+        </button>
+      </div>
+      
+      <div class="custom-css-sidebar bg-white ">
         
        <div class="custom-css-sidebar-inner align-middle">
         <form
-        class="mt-5 ml-4 custom-css-search-form"
+        class=" ml-4 custom-css-search-form"
         action="#"
         method="get"
         name="searchForm"
@@ -173,7 +176,20 @@
     
     <!--header ends-->
     <!--side bar and post priview section starts-->
-
+    <section class="container-fluid float-right custom-css-post-preview-section ">
+      <article class="row flex-column">
+        <img class="col-lg-7 img-fluid" src="../images/artificial-intelligence-g843fc2dd2_1920.jpg" alt="">
+        <span class="d-block col-lg-1 "><i>Published by admin on 05/08/2004</i></span>
+        <p class="col-lg-3">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum culpa earum vitae iusto dolorem excepturi nostrum atque mollitia similique, hic, delectus sit nulla molestias aperiam veniam, facilis optio sed adipisci amet maiores odit blanditiis dicta error. Nobis dolore, quia temporibus corrupti doloremque enim quae magnam placeat? Laboriosam voluptas assumenda minima.</p>
+        <a class="col-lg-1" href="#">Read More</a>
+      </article>
+      <article class="row flex-column">
+        <img class="col-lg-7 img-fluid" src="../images/artificial-intelligence-g843fc2dd2_1920.jpg" alt="">
+        <span class="d-block col-lg-1 "><i>Published by admin on 05/08/2004</i></span>
+        <p class="col-lg-3">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nesciunt, quasi at quos quaerat soluta accusamus vel a ut, minima vero qui architecto adipisci voluptatum laboriosam, illo suscipit autem impedit reprehenderit quisquam corrupti velit iste. Quam itaque expedita debitis numquam ut vero labore, illo aut aperiam deserunt sit voluptate temporibus voluptatibus.</p>
+        <a class="col-lg-1" href="#">Read More</a>
+      </article>
+    </section>
     <!--bootstrap scripts-->
    
     <script
