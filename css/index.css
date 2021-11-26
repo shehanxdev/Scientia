@@ -1,21 +1,44 @@
+:root {
+  --light-grey: #e1e1e1;
+  --primary-purple: #733eff;
+  --white: #fff;
+  --black: #000;
+}
+
 body {
-  height: 200vh;
+  background-color: #ffffff;
+  opacity: 1;
+  background-image: radial-gradient(#ccbaff 2px, transparent 2px), radial-gradient(#ccbaff 2px, #ffffff 2px);
+  background-size: 80px 80px;
+  background-position: 0 0, 40px 40px;
+  font: 18px "Roboto Slab", serif;
 }
 
 button:focus {
   outline: 0;
 }
 
+a {
+  color: var(--primary-purple);
+}
+
 .custom-css-div-inner-header {
   z-index: 1300;
 }
 
-.custom-css-logo {
-  height: 60px;
+.custom-css-logo h1 {
+  font: 65px "Megrim", cursive;
+  color: black;
+  font-weight: bold;
+}
+
+a:hover {
+  text-decoration: none;
 }
 
 .custom-css-hamburger-wrapper {
-  display: none;
+  display: initial;
+  z-index: 1000;
 }
 
 .custom-css-hamburger {
@@ -34,6 +57,11 @@ button:focus {
   opacity: 0;
 }
 
+.custom-css-hamburger-animate {
+  -webkit-animation: blinc 1s infinite;
+          animation: blinc 1s infinite;
+}
+
 .custom-css-close {
   height: 30px;
   -webkit-transition: 0.5s;
@@ -46,9 +74,16 @@ button:focus {
 }
 
 .custom-css-sidebar {
+  background-color: var(--white);
   overflow: auto;
   width: 300px;
-  border-right: 2px solid black;
+  -webkit-box-shadow: 5px 10px 10px 10px rgba(0, 0, 0, 0.432);
+          box-shadow: 5px 10px 10px 10px rgba(0, 0, 0, 0.432);
+  color: var(--black);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  -webkit-transform: translateX(-400px);
+          transform: translateX(-400px);
 }
 
 input:focus {
@@ -82,8 +117,8 @@ input:focus {
   margin: auto;
   display: block;
   background-color: transparent;
-  border: 2px solid #57a8ff;
-  color: #57a8ff;
+  border: 2px solid var(--white);
+  color: var(--white);
   margin-top: 20px;
   -webkit-transition: 0.5s;
   transition: 0.5s;
@@ -95,12 +130,16 @@ input:focus {
 }
 
 .custom-css-post-preview-section {
-  width: calc(424px + 467 * ((100vw - 768px) / 1133));
+  width: calc(620px + 271 * ((100vw - 768px) / 1133));
   font-size: calc(16px + 3 * ((100vw - 768px) / 1133));
   overflow: auto;
-  margin-right: calc(0px + 186 * ((100vw - 768px) / 1133));
+  margin-right: calc(15px + 335 * ((100vw - 768px) / 1133));
+  margin: auto;
   margin-top: calc(205px + 50 * ((100vw - 768px) / 1133));
-  position: relative;
+}
+
+.custom-css-post-preview-section .not1 {
+  margin-top: 120px;
 }
 
 .custom-css-post-preview-section img {
@@ -109,15 +148,91 @@ input:focus {
 
 .custom-css-post-preview-section span,
 .custom-css-post-preview-section p,
-.custom-css-post-preview-section a {
+.custom-css-post-preview-section a,
+.custom-css-post-preview-section h1 {
   display: block;
   width: 100%;
   max-width: 100%;
 }
 
+.custom-css-footer {
+  clear: both;
+  background-color: white;
+  z-index: 800;
+  position: relative;
+  width: 100%;
+  max-width: 100%;
+  margin: 0;
+  margin-top: 200px;
+  -webkit-box-shadow: 0px -13px 20px 10px #00000030;
+          box-shadow: 0px -13px 20px 10px #00000030;
+}
+
+.custom-css-footer-col-1 {
+  padding-top: 75px;
+  padding-left: 30px;
+}
+
+.custom-css-footer div {
+  margin-bottom: 30px;
+  margin-top: 30px;
+}
+
+.custom-css-footer-col-1 h1 {
+  font: 65px "Megrim", cursive;
+  font-weight: bold;
+}
+
+.custom-css-footer-link-icons {
+  padding-top: 50px;
+}
+
+.custom-css-footer-link-icons div {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.custom-css-footer-link-icons img {
+  height: 50px;
+}
+
+@-webkit-keyframes blinc {
+  0% {
+    -webkit-transform: scale(2);
+            transform: scale(2);
+  }
+  50% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  100% {
+    -webkit-transform: scale(2);
+            transform: scale(2);
+  }
+}
+
+@keyframes blinc {
+  0% {
+    -webkit-transform: scale(2);
+            transform: scale(2);
+  }
+  50% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  100% {
+    -webkit-transform: scale(2);
+            transform: scale(2);
+  }
+}
+
 @media only screen and (max-width: 768px) {
   html {
     font-size: 13px;
+  }
+  .custom-css-logo h1 {
+    font-size: 50px;
   }
   .custom-css-hamburger-wrapper {
     display: initial;
@@ -138,9 +253,8 @@ input:focus {
     -webkit-box-shadow: 0px 4px 7px 2px rgba(0, 0, 0, 0.295);
             box-shadow: 0px 4px 7px 2px rgba(0, 0, 0, 0.295);
     height: 0;
-    transition: 0.5s;
     overflow: hidden;
-    background-color: white;
+    background-color: var(--white);
   }
   .custom-css-sidebar form[name="searchForm"] {
     margin-left: 0 !important;
@@ -178,4 +292,11 @@ input:focus {
 .custom-css-sidebar-on {
   opacity: 1;
   height: 550px;
+  -webkit-transform: translateX(0px);
+          transform: translateX(0px);
+}
+
+.custom-css-sidebar-on-desktop {
+  -webkit-transform: translateX(0px);
+          transform: translateX(0px);
 }
