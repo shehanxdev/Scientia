@@ -6,13 +6,14 @@
 }
 body {
   //height: 200vh;
+
   background-color: #ffffff;
   opacity: 1;
   background-image: radial-gradient(#ccbaff 2px, transparent 2px),
     radial-gradient(#ccbaff 2px, #ffffff 2px);
   background-size: 80px 80px;
   background-position: 0 0, 40px 40px;
-  font: 18px "Roboto Slab", serif;
+  font: 18px "Raleway", sans-serif;
 }
 button:focus {
   outline: 0;
@@ -92,20 +93,23 @@ input:focus {
   float: right;
   margin-right: 39px;
 }
+.custom-css-submit-button-wrapper {
+  margin-bottom: 400px;
+}
 .custom-css-submit-button-wrapper input {
   width: 70px;
   height: 40px;
   margin: auto;
   display: block;
   background-color: transparent;
-  border: 2px solid var(--white);
-  color: var(--white);
+  border: 2px solid var(--black);
+  color: var(--black);
   margin-top: 20px;
   transition: 0.5s;
 }
 .custom-css-submit-button-wrapper input:hover {
-  border-color: black;
-  color: black;
+  border-color: var(--primary-purple);
+  color: var(--primary-purple);
 }
 //post preview section
 
@@ -118,6 +122,11 @@ input:focus {
   margin-top: calc(205px + 50 * ((100vw - 768px) / 1133));
   //position: relative;
   //float: right;
+}
+.custom-css-post-preview-section article {
+  margin: 20px;
+  box-shadow: 0px 0px 20px 0px grey;
+  border-radius: 15px;
 }
 .custom-css-post-preview-section .not1 {
   margin-top: 120px;
@@ -201,7 +210,7 @@ input:focus {
     box-shadow: 0px 4px 7px 2px rgba(0, 0, 0, 0.295);
     height: 0;
 
-    overflow: hidden;
+    overflow: auto;
     background-color: var(--white);
     //overflow: hidden;
   }

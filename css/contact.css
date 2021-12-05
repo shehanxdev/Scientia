@@ -1,0 +1,211 @@
+:root {
+  --light-grey: #e1e1e1b7;
+  --primary-purple: #733eff;
+  --white: #fff;
+  --black: #000;
+}
+
+body {
+  background-color: #ffffff;
+  opacity: 1;
+  background-image: radial-gradient(#ccbaff 2px, transparent 2px), radial-gradient(#ccbaff 2px, #ffffff 2px);
+  background-size: 80px 80px;
+  background-position: 0 0, 40px 40px;
+  font: 18px "Raleway", sans-serif;
+}
+
+button:focus {
+  outline: 0;
+}
+
+input:focus,
+textarea:focus {
+  outline: 0;
+}
+
+a {
+  color: var(--primary-purple);
+}
+
+.custom-css-div-inner-header {
+  z-index: 1300;
+}
+
+.custom-css-logo h1 {
+  font: 65px "Megrim", cursive;
+  color: black;
+  font-weight: bold;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+.custom-contact-form-section {
+  margin: 200px calc(100px + 100 * ((100vw - 992px) / 909)) 0 calc(100px + 100 * ((100vw - 992px) / 909));
+}
+
+h1 {
+  text-align: center;
+  margin: auto;
+  font-size: 50px;
+  margin-bottom: 100px;
+}
+
+.custom-contact-form-wrapper {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  -webkit-box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.548);
+          box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.548);
+  border-radius: 15px;
+}
+
+.custom-css-contact-details {
+  background-color: var(--primary-purple);
+}
+
+h3 {
+  margin: auto;
+  margin-top: 20px;
+}
+
+form input,
+form textarea {
+  border: 0;
+  background-color: var(--light-grey);
+  color: black;
+  width: calc(339px + 361 * ((100vw - 992px) / 909));
+  margin: 20px;
+  margin-right: 40px;
+}
+
+form input {
+  height: 50px;
+}
+
+form input[type="submit"] {
+  margin: auto;
+  background-color: var(--primary-purple);
+  color: white;
+  -webkit-transition: 0.7s;
+  transition: 0.7s;
+}
+
+form input[type="submit"]:hover {
+  background-color: white;
+  color: var(--primary-purple);
+  border: 1px solid var(--primary-purple);
+}
+
+.custom-css-footer {
+  clear: both;
+  background-color: white;
+  z-index: 800;
+  position: relative;
+  width: 100%;
+  max-width: 100%;
+  margin: 0;
+  margin-top: 200px;
+  -webkit-box-shadow: 0px -13px 20px 10px #00000030;
+          box-shadow: 0px -13px 20px 10px #00000030;
+}
+
+.custom-css-footer-col-1 {
+  padding-top: 75px;
+  padding-left: 30px;
+}
+
+.custom-css-footer div {
+  margin-bottom: 30px;
+  margin-top: 30px;
+}
+
+.custom-css-footer-col-1 h1 {
+  font: 65px "Megrim", cursive;
+  font-weight: bold;
+}
+
+.custom-css-footer-link-icons {
+  padding-top: 50px;
+}
+
+.custom-css-footer-link-icons div {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.custom-css-footer-link-icons img {
+  height: 50px;
+}
+
+@media only screen and (max-width: 768px) {
+  html {
+    font-size: 13px;
+  }
+  .custom-css-logo h1 {
+    font-size: 50px;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .custom-css-contact-details {
+    width: 100%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: auto !important;
+  }
+  .custom-css-contact-details div {
+    margin: auto !important;
+    margin-top: 50px !important;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .custom-css-contact-details div i,
+  .custom-css-contact-details div span {
+    display: block;
+    margin: auto;
+  }
+  .custom-contact-form-details-last-div span {
+    margin-bottom: 30px !important;
+  }
+  form {
+    width: 100%;
+    margin: auto !important;
+  }
+  form input,
+  form textarea {
+    width: initial !important;
+    margin: 20px !important;
+  }
+  form input[type="submit"] {
+    margin: auto !important;
+    margin-bottom: 30px !important;
+  }
+}
+
+::-webkit-input-placeholder {
+  color: #414141 !important;
+}
+
+:-ms-input-placeholder {
+  color: #414141 !important;
+}
+
+::-ms-input-placeholder {
+  color: #414141 !important;
+}
+
+::placeholder {
+  color: #414141 !important;
+}
