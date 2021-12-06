@@ -52,7 +52,7 @@ h1 {
 }
 .custom-contact-form-wrapper {
   width: fit-content;
-  box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.548);
+  box-shadow: 0px 0px 9px 0px rgba(0, 0, 0, 0.329);
   border-radius: 15px;
 }
 .custom-css-contact-details {
@@ -130,6 +130,13 @@ form input[type="submit"]:hover {
   }
 }
 @media only screen and (max-width: 992px) {
+  .custom-contact-form-section {
+    margin: initial;
+    margin-top: 200px;
+  }
+  .custom-contact-form-wrapper {
+    margin: initial;
+  }
   .custom-css-contact-details {
     width: 100%;
     justify-content: center;
@@ -147,9 +154,7 @@ form input[type="submit"]:hover {
     display: block;
     margin: auto;
   }
-  .custom-contact-form-details-last-div span {
-    margin-bottom: 30px !important;
-  }
+
   form {
     width: 100%;
     margin: auto !important;
