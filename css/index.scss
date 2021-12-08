@@ -114,7 +114,7 @@ input:focus {
 //post preview section
 
 .custom-css-post-preview-section {
-  width: calc(620px + 271 * ((100vw - 768px) / 1133));
+  width: auto;
   font-size: calc(16px + 3 * ((100vw - 768px) / 1133));
   overflow: auto;
   margin-right: calc(15px + 335 * ((100vw - 768px) / 1133));
@@ -123,15 +123,18 @@ input:focus {
   //position: relative;
   //float: right;
 }
+.custom-css-post-wrapper {
+  padding: 20px;
+  margin: auto;
+  justify-content: center;
+}
 .custom-css-post-preview-section article {
-  margin: 20px;
   box-shadow: 0px 0px 9px 0px rgba(0, 0, 0, 0.329);
   border-radius: 15px;
   background-color: white;
+  height: fit-content;
 }
-.custom-css-post-preview-section .not1 {
-  margin-top: 120px;
-}
+
 .custom-css-post-preview-section img {
   max-width: 100%;
 }
@@ -236,6 +239,8 @@ input:focus {
   }
   .custom-css-post-preview-section article {
     margin-top: 50px;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
   }
 }
 

@@ -1,0 +1,41 @@
+.custom-css-footer {
+  clear: both;
+  background-color: white;
+  z-index: 800;
+  position: relative;
+  width: 100%;
+  max-width: 100%;
+  margin: 0;
+  margin-top: 200px;
+  -webkit-box-shadow: 0px -13px 20px 10px #00000030;
+          box-shadow: 0px -13px 20px 10px #00000030;
+}
+
+.custom-css-footer-col-1 {
+  padding-top: 75px;
+  padding-left: 30px;
+}
+
+.custom-css-footer div {
+  margin-bottom: 30px;
+  margin-top: 30px;
+}
+
+.custom-css-footer-col-1 h1 {
+  font: 65px "Megrim", cursive;
+  font-weight: bold;
+}
+
+.custom-css-footer-link-icons {
+  padding-top: 50px;
+}
+
+.custom-css-footer-link-icons div {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.custom-css-footer-link-icons img {
+  height: 50px;
+}

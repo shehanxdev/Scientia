@@ -1,46 +1,6 @@
-:root {
-  --light-grey: #e1e1e1b7;
-  --primary-purple: #733eff;
-  --white: #fff;
-  --black: #000;
-}
-
-body {
-  background-color: #ffffff;
-  opacity: 1;
-  background-image: radial-gradient(#ccbaff 2px, transparent 2px), radial-gradient(#ccbaff 2px, #ffffff 2px);
-  background-size: 80px 80px;
-  background-position: 0 0, 40px 40px;
-  font: 18px "Raleway", sans-serif;
-}
-
-button:focus {
-  outline: 0;
-}
-
-input:focus,
-textarea:focus {
-  outline: 0;
-}
-
-a {
-  color: var(--primary-purple);
-}
-
-.custom-css-div-inner-header {
-  z-index: 1300;
-}
-
-.custom-css-logo h1 {
-  font: 65px "Megrim", cursive;
-  color: black;
-  font-weight: bold;
-}
-
-a:hover {
-  text-decoration: none;
-}
-
+@import url(../css/footer.css);
+@import url(../css/header.css);
+@import url(../css/global.css);
 .custom-contact-form-section {
   margin: 200px calc(100px + 100 * ((100vw - 992px) / 909)) 0 calc(100px + 100 * ((100vw - 992px) / 909));
 }
@@ -58,7 +18,6 @@ h1 {
   width: fit-content;
   -webkit-box-shadow: 0px 0px 9px 0px rgba(0, 0, 0, 0.329);
           box-shadow: 0px 0px 9px 0px rgba(0, 0, 0, 0.329);
-  border-radius: 15px;
 }
 
 .custom-css-contact-details {
@@ -96,57 +55,6 @@ form input[type="submit"]:hover {
   background-color: white;
   color: var(--primary-purple);
   border: 1px solid var(--primary-purple);
-}
-
-.custom-css-footer {
-  clear: both;
-  background-color: white;
-  z-index: 800;
-  position: relative;
-  width: 100%;
-  max-width: 100%;
-  margin: 0;
-  margin-top: 200px;
-  -webkit-box-shadow: 0px -13px 20px 10px #00000030;
-          box-shadow: 0px -13px 20px 10px #00000030;
-}
-
-.custom-css-footer-col-1 {
-  padding-top: 75px;
-  padding-left: 30px;
-}
-
-.custom-css-footer div {
-  margin-bottom: 30px;
-  margin-top: 30px;
-}
-
-.custom-css-footer-col-1 h1 {
-  font: 65px "Megrim", cursive;
-  font-weight: bold;
-}
-
-.custom-css-footer-link-icons {
-  padding-top: 50px;
-}
-
-.custom-css-footer-link-icons div {
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
-}
-
-.custom-css-footer-link-icons img {
-  height: 50px;
-}
-
-@media only screen and (max-width: 768px) {
-  html {
-    font-size: 13px;
-  }
-  .custom-css-logo h1 {
-    font-size: 50px;
-  }
 }
 
 @media only screen and (max-width: 992px) {
